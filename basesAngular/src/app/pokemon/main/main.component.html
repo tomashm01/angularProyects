@@ -1,0 +1,22 @@
+<hr>
+<h2>Pokemons</h2>
+<div class="row">
+  <div class="col">
+    <h3>Listado de pokemons</h3>
+    <ul>
+      <li *ngFor="let pokemon of pokemons;">
+        {{pokemon.nombre}}, {{pokemon.poder}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="col">
+    <h3>Agregar nuevo pokemon</h3>
+    <form (ngSubmit)=agregarPokemon($event)>
+      <input type="text" placeholder="Nombre" [(ngModel)]="schema.nombre" name="nombre">
+      <input type="number" placeholder="Poder" [(ngModel)]="schema.poder" name="poder">
+      <button>Agregar</button>
+    </form>
+  </div>
+
+</div>

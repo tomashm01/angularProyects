@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ContadorComponent } from './contador/contador.component';
 import { HeroeComponent } from './heroes/heroe/heroe.component';
+import { PokemonModule } from './pokemon/pokemon.module';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +15,7 @@ import { HeroeComponent } from './heroes/heroe/heroe.component';
   ],
   imports: [
     BrowserModule,
-
+    PokemonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
